@@ -1,7 +1,11 @@
 ---
+import Link from "../components/Link.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <h1>Homepage</h1>
+<BaseLayout title="Homepage">
+  <div>
+    <h1>Homepage</h1>
+    <Link href="/about">About</Link>
+  </div>
 </BaseLayout>
