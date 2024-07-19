@@ -1,8 +1,28 @@
 ---
-import Link from "../../components/Link.astro";
+import Card from "../../components/Card.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import car from "../../assets/car.png";
+import author from "../../assets/carrie.png";
+
+const alt = "car";
+const pill = "technology";
+const title = "Why is the Tesla Cybertruck designed the way it is?";
+const description = "An exploration into the truck’s polarising design";
+const author_name = "Carry Brewer";
+const time = "2 hours ago";
 ---
 
-<BaseLayout>
-  <Link href="/">Home</Link>
+<BaseLayout title="About">
+  <h1>About</h1>
+  <Card
+    img={car.src}
+    alt={alt}
+    pill={pill}
+    title={title}
+    description={description}
+    author_img={author.src}
+    author_name={author_name}
+    time={time}
+  />
 </BaseLayout>
